@@ -18,4 +18,10 @@ function countSheeps(arrayOfSheep) {
   const result = arrayOfSheep.filter(i => i === true).length;
   return result;
 }
+
+//best practice
+function countSheeps(arrayOfSheeps) {
+  return arrayOfSheeps.filter(Boolean).length;
+}
+
 ```

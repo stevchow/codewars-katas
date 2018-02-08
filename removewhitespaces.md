@@ -5,6 +5,6 @@ function noSpace(x){
   return x.replace(/\s/g,""); // \s for looking for whitespace
 }
 //or
-//function noSpace(x){return x.split(' ').join('')}
+function noSpace(x){return x.split(' ').join('')}
 ```
 
