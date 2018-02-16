@@ -24,6 +24,10 @@ return [10, -65].
 function countPositivesSumNegatives(input) {
     //create blank array to return it as result latter
     let count = [];
+    //we need to define if input empty or null hehe
+    if (input == null || input.length < 1){
+      return [];
+    }  
     //use filter to return the actual output of our condition. 
     //If you are using every() or some() it , it will return boolean
 
@@ -32,7 +36,7 @@ function countPositivesSumNegatives(input) {
     //use reduce to sum it
     let neg = input.filter(item => item < 0).reduce((a,b) => a + b, 0);
     count.push(pos.length, neg);
+     
     return count;
 }
-
 ```
