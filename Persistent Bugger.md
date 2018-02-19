@@ -9,9 +9,11 @@ For example:
                         // 1*2*6 = 12, and finally 1*2 = 2
 
  persistence(4) === 0 // because 4 is already a one-digit number
+
 ```js
 
 // I think it works like this but not, I false
+//too complicated
  function persistence(num) {
  
   function digits(numToConvert){ 
@@ -31,5 +33,17 @@ For example:
     lastIndex.push(i+1);
   }
   return lastIndex.pop();
+}
+
+// Real Solution 
+
+function persistence(num) {
+  var times = 0;
+  num = num.toString();
+  while (num.length > 1) {
+    times++;
+    num = num.split('').map(Number).reduce((a, b) => a * b).toString();
+  }
+  return times;
 }
 ```
