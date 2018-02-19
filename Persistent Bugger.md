@@ -38,7 +38,7 @@ For example:
 // Real Solution 
 
 function persistence(num) {
-  var times = 0;
+  let times = 0;
   num = num.toString();
   while (num.length > 1) {
     times++;
