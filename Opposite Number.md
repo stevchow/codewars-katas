@@ -10,7 +10,5 @@ But can you do it in 1 line of code and without any conditionals?
 #solution
 
 ```js
-function opposite(number) {
-  return number * -1;
-}
+const opposite = (number) => number * -1;
 ```
